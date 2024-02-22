@@ -1,0 +1,33 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  background-color: var(--color-white);
+  text-align: center;
+
+  box-shadow: var(--shadow-small);
+}
+
+.thead {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.td {
+  padding: 10px;
+  border: 1px solid var(--color-gray);
+  color: var(--color-dark);
+}
+
+.th {
+  padding: 10px;
+  border: 1px solid var(--color-gray);
+  color: var(--color-white);
+}
+
+.tr {
+  &:nth-of-type(odd) {
+    background-color: var(--color-light);
+  }
+}

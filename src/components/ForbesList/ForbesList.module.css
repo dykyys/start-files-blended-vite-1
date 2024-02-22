@@ -1,0 +1,41 @@
+.board {
+  width: 480px;
+  border-radius: 12px;
+
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header {
+  padding: 48px;
+
+  background-color: var(--color-accent);
+}
+
+.title {
+  text-align: right;
+  font-size: var(--font-large);
+  font-weight: 700;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.titleTop {
+  display: block;
+  letter-spacing: 6.4px;
+}
+
+.titleBottom {
+  font-size: var(--font-small);
+  font-weight: 300;
+  letter-spacing: 2.6px;
+}
+
+.list {
+  background-color: var(--color-white);
+  border-radius: 0 0 12px;
+  padding: 12px 20px;
+  display: grid;
+  row-gap: 8px;
+}
