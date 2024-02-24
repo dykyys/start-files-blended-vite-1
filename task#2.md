@@ -32,11 +32,11 @@
 ```
 Компонент `StatisticsItem` повинен створювати наступну структуру.
 ```jsx
-<div className={style.item}>
+<>
   {/* Тут повинна бути іконка */}
   <span className={style.counter}>2147</span>
   <p className={style.text}>Happy Customers</p>
-</div>
+</>
 ```
 
 > Для виконання завдання з іконкою потрібно продумати логіку, як динамічно
