@@ -1,27 +1,3 @@
-.item {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  align-items: center;
-
-  padding: 10px 30px 10px 10px;
-  overflow: hidden;
-  border-radius: 10px;
-
-  box-shadow: var(--shadow-medium);
-  cursor: pointer;
-
-  transition-property: transform, box-shadow;
-  transition-duration: 0.25s;
-  transition-timing-function: var(--animation-cubicBezier);
-
-  background-color: var(--color-white);
-
-  &:hover {
-    transform: scale(1.02);
-    box-shadow: var(--shadow-small);
-  }
-}
-
 .avatar {
   width: 60px;
   border-radius: 50%;
