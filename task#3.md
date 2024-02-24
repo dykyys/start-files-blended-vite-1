@@ -22,9 +22,11 @@
   </div>
 
   <ul className={style.list}>
-     <li className={style.item}>
-       {/* Довільна кіл-сть ForbesListItem */}
-     </li>
+     {/* Довільна кіл-сть
+        <li className={style.item}>
+           <ForbesListItem/>
+        </li>
+     */}
   </ul>
 </div>
 ```
