@@ -20,13 +20,13 @@
 Компонент повинен створювати наступну структуру.
 
 ```jsx
-<h2 className={style.title}>Main Statistics</h2>
+<h3 className={style.title}>Main Statistics</h3>
 
 <ul className={style.list}>
-  <li className={styled.item}>
+  <li className={style.item}>
     {/* Тут повинна бути іконка */}
-    <span className={styled.counter}>2147</span>
-    <p className={styled.text}>Happy Customers</p>
+    <span className={style.counter}>2147</span>
+    <p className={style.text}>Happy Customers</p>
   </li>
 </ul>
 ```
