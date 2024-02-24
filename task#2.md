@@ -23,9 +23,11 @@
 <h3 className={style.title}>Main Statistics</h3>
 
 <ul className={style.list}>
-  <li className={style.item}>
-    <StatisticsItem/>
-  </li>
+ {/* Довільна кіл-сть
+    <li className={style.item}>
+      <StatisticsItem/>
+    </li>
+*/} 
 </ul>
 ```
 Компонент `StatisticsItem` повинен створювати наступну структуру.
