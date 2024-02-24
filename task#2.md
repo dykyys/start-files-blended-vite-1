@@ -24,11 +24,17 @@
 
 <ul className={style.list}>
   <li className={style.item}>
-    {/* Тут повинна бути іконка */}
-    <span className={style.counter}>2147</span>
-    <p className={style.text}>Happy Customers</p>
+    <StatisticsItem/>
   </li>
 </ul>
+```
+Компонент `StatisticsItem` повинен створювати наступну структуру.
+```jsx
+<>
+  {/* Тут повинна бути іконка */}
+  <span className={style.counter}>2147</span>
+  <p className={style.text}>Happy Customers</p>
+</>
 ```
 
 > Для виконання завдання з іконкою потрібно продумати логіку, як динамічно
