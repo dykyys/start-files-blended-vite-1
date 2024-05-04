@@ -9,6 +9,7 @@ import {
 } from 'components';
 
 export const App = () => {
+ console.log("App"); 
   return (
     <Section>
       <Container>
