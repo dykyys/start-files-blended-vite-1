@@ -8,16 +8,17 @@ import {
   ForbesList,
 } from 'components';
 import article from 'data/article.json';
+import stats from 'data/stats.json';
 
 export const App = () => {
   return (
     <Section>
       <Container>
         <Heading title="Task 1 Blog Card" bottom />
-        <BlogCard {...article}/>
+        <BlogCard {...article} />
 
         <Heading title="Task 2 Statistics" top bottom />
-        <Statistics title="Main Statistics" />
+        <Statistics title={stats.title} stats={stats} />
 
         <Heading title="Task 3 Forbes list" top bottom />
         <ForbesList />
