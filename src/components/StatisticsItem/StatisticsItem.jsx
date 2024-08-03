@@ -7,7 +7,6 @@ export const StatisticsItem = ({ stat: { title, total }, icon }) => {
       <IconContext.Provider value={{ color: 'blue', size: 30 }}>
         {icon}
       </IconContext.Provider>
-
       <span className={style.counter}>{total}</span>
       <p className={style.text}>{title}</p>
     </>
