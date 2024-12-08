@@ -1,12 +1,10 @@
-import {
-  Section,
-  Container,
-  BlogCard,
-  Heading,
-  Statistics,
-  CryptoHistory,
-  ForbesList,
-} from 'components';
+import BlogCard from './components/BlogCard/BlogCard';
+import Container from './components/Container/Container';
+import CryptoHistory from './components/CryptoHistory/CryptoHistory';
+import ForbesList from './components/ForbesList/ForbesList';
+import Heading from './components/Heading/Heading';
+import Section from './components/Section/Section';
+import Statistics from './components/Statistics/Statistics';
 
 export const App = () => {
   return (

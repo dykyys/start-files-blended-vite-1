@@ -4,6 +4,8 @@
 // import { StatisticsItem } from '../StatisticsItem/StatisticsItem';
 // import style from './Statistics.module.css';
 
-export const Statistics = () => {
+const Statistics = () => {
   return <h2>Statistics</h2>;
 };
+
+export default Statistics;
