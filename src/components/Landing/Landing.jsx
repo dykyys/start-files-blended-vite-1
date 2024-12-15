@@ -1,37 +1,32 @@
+import LandingSection from '../LandingSection/LandingSection';
 import styles from './Landing.module.css';
 
 const Landing = () => {
   return (
     <div className={styles.landing}>
       {/* Section 1: Наші переваги */}
-
-      <section>
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Наші переваги</h2>
-          <p className={styles.sectionSubtitle}>Чому обирають саме нас</p>
-          <hr className={styles.sectionDivider} />
-          <div className={styles.cards}>
-            <div className={styles.card}>
-              <h3 className={styles.cardTitle}>Висока якість</h3>
-              <p className={styles.cardDescription}>
-                Ми пропонуємо лише найкращі послуги для наших клієнтів.
-              </p>
-            </div>
-            <div className={styles.card}>
-              <h3 className={styles.cardTitle}>Доступні ціни</h3>
-              <p className={styles.cardDescription}>
-                Прозорі тарифи без прихованих платежів.
-              </p>
-            </div>
-            <div className={styles.card}>
-              <h3 className={styles.cardTitle}>Швидке обслуговування</h3>
-              <p className={styles.cardDescription}>
-                Ми цінуємо ваш час і працюємо оперативно.
-              </p>
-            </div>
+      <LandingSection title="Наші переваги" subtitle="Чому обирають саме нас">
+        <div className={styles.cards}>
+          <div className={styles.card}>
+            <h3 className={styles.cardTitle}>Висока якість</h3>
+            <p className={styles.cardDescription}>
+              Ми пропонуємо лише найкращі послуги для наших клієнтів.
+            </p>
+          </div>
+          <div className={styles.card}>
+            <h3 className={styles.cardTitle}>Доступні ціни</h3>
+            <p className={styles.cardDescription}>
+              Прозорі тарифи без прихованих платежів.
+            </p>
+          </div>
+          <div className={styles.card}>
+            <h3 className={styles.cardTitle}>Швидке обслуговування</h3>
+            <p className={styles.cardDescription}>
+              Ми цінуємо ваш час і працюємо оперативно.
+            </p>
           </div>
         </div>
-      </section>
+      </LandingSection>
 
       {/* Section 2: Часті питання */}
 
