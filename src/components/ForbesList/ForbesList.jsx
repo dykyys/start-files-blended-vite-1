@@ -2,18 +2,7 @@ import style from './ForbesList.module.css';
 import ForbesListItem from '../ForbesListItem/ForbesListItem';
 
 const ForbesList = ({ forbes }) => {
-  const forbesList = forbes.map(forbesItem => {
-    return (
-      <li key={forbesItem.id} className={style.item}>
-        <ForbesListItem
-          avatar={forbesItem.avatar}
-          name={forbesItem.name}
-          capital={forbesItem.capital}
-          isIncrease={forbesItem.isIncrease}
-        />
-      </li>
-    );
-  });
+  //
 
   return (
     <div className={style.board}>
@@ -23,7 +12,20 @@ const ForbesList = ({ forbes }) => {
           <span className={style.titleBottom}>Leader board</span>
         </h2>
       </div>
-      <ul className={style.list}>{forbesList}</ul>
+      <ul className={style.list}>
+        {forbes.map(forbesItem => {
+          return (
+            <li key={forbesItem.id} className={style.item}>
+              <ForbesListItem
+                avatar={forbesItem.avatar}
+                name={forbesItem.name}
+                capital={forbesItem.capital}
+                isIncrease={forbesItem.isIncrease}
+              />
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };
