@@ -5,6 +5,8 @@ import ForbesList from './components/ForbesList/ForbesList';
 import Heading from './components/Heading/Heading';
 import Section from './components/Section/Section';
 import Statistics from './components/Statistics/Statistics';
+import article from './data/article.json';
+import forbes from './data/forbes.json';
 import stats from './data/stats.json';
 import transactions from './data/transactions.json';
 
@@ -13,13 +15,21 @@ export const App = () => {
     <Section>
       <Container>
         <Heading title="Task 1 Blog Card" bottom />
-        <BlogCard />
+        <BlogCard
+          poster={article.poster}
+          tag={article.tag}
+          title={article.title}
+          description={article.description}
+          userName={article.name}
+          avatar={article.avatar}
+          postedAt={article.postedAt}
+        />
 
         <Heading title="Task 2 Statistics" top bottom />
         <Statistics title="Main Statistics" stats={stats} />
 
         <Heading title="Task 3 Forbes list" top bottom />
-        <ForbesList />
+        <ForbesList forbes={forbes} />
 
         <Heading title="Task 4 Crypto history" top bottom />
         <CryptoHistory dataTransactions={transactions} />
