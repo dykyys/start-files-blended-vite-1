@@ -1,0 +1,17 @@
+import styles from './LandingSection.module.css';
+import clsx from 'clsx';
+
+const LandingSection = ({ title, subtitle = false, srOnly, children }) => {
+  return (
+    <section>
+      <div className={styles.container}>
+        <h2 className={clsx(styles.title, srOnly && 'sr-only')}>{title}</h2>
+        {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+        <hr className={styles.divider} />
+        {children}
+      </div>
+    </section>
+  );
+};
+
+export default LandingSection;
