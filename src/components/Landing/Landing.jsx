@@ -5,7 +5,11 @@ const Landing = () => {
   return (
     <div className={styles.landing}>
       {/* Section 1: Наші переваги */}
-      <LandingSection title="Наші переваги" subtitle="Чому обирають саме нас">
+      <LandingSection
+        title="Наші переваги"
+        subtitle="Чому обирають саме нас"
+        srOnly={false}
+      >
         <div className={styles.cards}>
           <div className={styles.card}>
             <h3 className={styles.cardTitle}>Висока якість</h3>
@@ -29,77 +33,69 @@ const Landing = () => {
       </LandingSection>
 
       {/* Section 2: Часті питання */}
-
-      <section>
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Часті питання</h2>
-          <p className={styles.sectionSubtitle}>
-            Відповіді на найпоширеніші запитання
-          </p>
-          <hr className={styles.sectionDivider} />
-          <div className={styles.questions}>
-            <details>
-              <summary>Як оформити замовлення?</summary>
-              <p>
-                Ви можете оформити замовлення через наш сайт або за телефоном.
-              </p>
-            </details>
-            <details>
-              <summary>Які способи оплати доступні?</summary>
-              <p>Ми приймаємо готівку, картки та онлайн-платежі.</p>
-            </details>
-            <details>
-              <summary>Чи є гарантія на послуги?</summary>
-              <p>Так, ми надаємо гарантію на всі наші послуги.</p>
-            </details>
-            <details>
-              <summary>Скільки часу займає обслуговування?</summary>
-              <p>Це залежить від типу послуги. Зазвичай від 1 до 3 днів.</p>
-            </details>
-            <details>
-              <summary>Чи працюєте ви у вихідні дні?</summary>
-              <p>Так, ми працюємо щодня з 9:00 до 20:00.</p>
-            </details>
-          </div>
+      <LandingSection
+        title="Часті питання"
+        subtitle="Відповіді на найпоширеніші запитання"
+        srOnly={false}
+      >
+        <div className={styles.questions}>
+          <details>
+            <summary>Як оформити замовлення?</summary>
+            <p>
+              Ви можете оформити замовлення через наш сайт або за телефоном.
+            </p>
+          </details>
+          <details>
+            <summary>Які способи оплати доступні?</summary>
+            <p>Ми приймаємо готівку, картки та онлайн-платежі.</p>
+          </details>
+          <details>
+            <summary>Чи є гарантія на послуги?</summary>
+            <p>Так, ми надаємо гарантію на всі наші послуги.</p>
+          </details>
+          <details>
+            <summary>Скільки часу займає обслуговування?</summary>
+            <p>Це залежить від типу послуги. Зазвичай від 1 до 3 днів.</p>
+          </details>
+          <details>
+            <summary>Чи працюєте ви у вихідні дні?</summary>
+            <p>Так, ми працюємо щодня з 9:00 до 20:00.</p>
+          </details>
         </div>
-      </section>
+      </LandingSection>
 
       {/* Section 3: Зв'язатися з нами */}
-
-      <section>
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Зв'язатися з нами</h2>
-          <p className={styles.sectionSubtitle}>
-            Залиште заявку, і ми вам зателефонуємо
-          </p>
-          <hr className={styles.sectionDivider} />
-          <form className={styles.contactForm}>
-            <div className={styles.formGroup}>
-              <label htmlFor="name">Ім'я</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Ваше ім'я"
-                required
-              />
-            </div>
-            <div className={styles.formGroup}>
-              <label htmlFor="phone">Телефон</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Ваш номер телефону"
-                required
-              />
-            </div>
-            <button type="submit" className={styles.btnSubmit}>
-              Відправити
-            </button>
-          </form>
-        </div>
-      </section>
+      <LandingSection
+        title="Звязатися з нами"
+        subtitle="Залиште заявку, і ми вам зателефонуємо"
+        srOnly={true}
+      >
+        <form className={styles.contactForm}>
+          <div className={styles.formGroup}>
+            <label htmlFor="name">Імя</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ваше ім'я"
+              required
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="phone">Телефон</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Ваш номер телефону"
+              required
+            />
+          </div>
+          <button type="submit" className={styles.btnSubmit}>
+            Відправити
+          </button>
+        </form>
+      </LandingSection>
     </div>
   );
 };
