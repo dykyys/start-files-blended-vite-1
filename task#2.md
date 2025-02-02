@@ -27,10 +27,12 @@
     <li className={style.item}>
       <StatisticsItem/>
     </li>
-*/} 
+*/}
 </ul>
 ```
+
 Компонент `StatisticsItem` повинен створювати наступну структуру.
+
 ```jsx
 <>
   {/* Тут повинна бути іконка */}
