@@ -31,7 +31,7 @@
   </div>
   <div className={styles.cardBody}>
     <span className={styles.tag}>Technology</span>
-    <h2 className={styles.cardTitle}>What's new in 2022 Tech</h2>
+    <h2 className={styles.cardTitle}>What is new in 2022 Tech</h2>
     <p className={styles.cardText}>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis
       molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!
